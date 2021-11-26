@@ -1,6 +1,6 @@
 ![logo](https://raw.githubusercontent.com/unifiedstreaming/origin/stable/unifiedstreaming-logo-black.png)
 
-# Important note on this ARM64 brach :
+# Important note on this ARM64 branch :
 
 1) This is a branch in a clone of the Unified Streaming repository, therefore not supported by Unified Streaming
 
