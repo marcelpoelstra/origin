@@ -1,5 +1,18 @@
 ![logo](https://raw.githubusercontent.com/unifiedstreaming/origin/stable/unifiedstreaming-logo-black.png)
 
+# Important note on this ARM64 brach :
+
+1) This is a branch in a clone of the Unified Streaming repository, therefore not supported by Unified Streaming
+
+2) The arm64 container is based on Ubuntu Focal instead of Alpine Linux to be able to support arm64
+
+3) Please make sure to build this container image for arm64 locally on a Macbook with Apple Silicon or any other arm64 based system or environment.
+
+4) Some of the examples below refer to the Unified Streaming dockerhub for images, please make sure to refer your locally built image when using commands like 'docker run', or alternatively run Origin using the included docker-compose example in the /docker subdirectory
+
+5) Freaky / Hacky idea : You can run this arm64 container on Raspberry Pi (no guarantee or support)
+
+
 # What is Unified Origin?
 
 Unified Origin offers one solution for just-in-time packaging to MPEG-DASH, Apple (HLS), Adobe (HDS) and Microsoft (MSS). Our added features include content protection, restart TV, time-shift, catchup-TV, subtitles, and multiple language and audio tracks.

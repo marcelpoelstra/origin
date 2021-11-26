@@ -48,16 +48,16 @@ if [ "$REMOTE_STORAGE_URL" ]
 fi
 
 # change Listen 80 to Listen 0.0.0.0:80 to avoid some strange issues when IPv6 is available
-/bin/sed -i "s@Listen 80@Listen 0.0.0.0:80@g" /etc/apache2/httpd.conf
+#/bin/sed -i "s@Listen 80@Listen 0.0.0.0:80@g" /etc/apache2/httpd.conf
 
 # USP license
 echo "$UspLicenseKey" > /etc/usp-license.key
 
-rm -f /run/apache2/httpd.pid
+rm -f /run/apache2/apache2.pid
 
 # first arg is `-f` or `--some-option`
 if [ "${1#-}" != "$1" ]; then
-  set -- httpd $EXTRA_OPTIONS "$@"
+  set -- apache2ctl $EXTRA_OPTIONS "$@"
 fi
 
 exec "$@"
